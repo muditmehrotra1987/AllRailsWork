@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+  		<%= yield :title %> 
+  		<%= stylesheet_link_tag    "bootstrap", "scroller", "styles", "stylesheet" %>
+  		<%= javascript_include_tag "application", :media => "all" %>
+  		<%= csrf_meta_tags %>
+	</head>
+	<body>
+	
+		<div class="container">
+			<%= render "home/header.rhtml"%>	<!-- Using Rendering to display menu-->
+  				<%= yield %>
+   			<%= render "home/footer.rhtml"%> 	<!-- Using Rendering to display footer-->
+		</div>		
+				
+	</body>
+</html>

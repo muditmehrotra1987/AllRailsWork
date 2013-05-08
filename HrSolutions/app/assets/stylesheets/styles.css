@@ -1,0 +1,16 @@
+#mockups { OVERFLOW: hidden }
+HTML #mockups { WIDTH: 912px }
+#mockups UL { PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 20000px; PADDING-RIGHT: 0px; PADDING-TOP: 0px }
+#recent UL { PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 20000px; PADDING-RIGHT: 0px; PADDING-TOP: 0px }
+#mockups LI { TEXT-ALIGN: center; WIDTH: 912px; FLOAT: left }
+.prev { margin-top:10px; WIDTH: 23px; FLOAT: left; HEIGHT: 37px; CURSOR: pointer }
+.next { margin-top:10px; WIDTH: 23px; FLOAT: right; HEIGHT: 37px; CURSOR: pointer }
+
+
+#TopHeaderMockups { OVERFLOW: hidden }
+HTML #TopHeaderMockups { WIDTH: 912px }
+#TopHeaderMockups UL { PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 20000px; PADDING-RIGHT: 0px; PADDING-TOP: 0px }
+#recent UL { PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 20000px; PADDING-RIGHT: 0px; PADDING-TOP: 0px }
+#TopHeaderMockups LI { TEXT-ALIGN: center; WIDTH: 912px; FLOAT: left; }
+.TopHeaderPrev { WIDTH: 36px; FLOAT: right; HEIGHT: 37px; z-index:1px; CURSOR: pointer; position:absolute; display:block; }
+.TopHeaderNext { WIDTH: 36px; FLOAT: right; HEIGHT: 37px; z-index:1px; CURSOR: pointer; position:absolute; display:block; }

@@ -1,0 +1,35 @@
+<div class="navbar navbar-fixed-top">  
+  <div class="navbar-inner">  
+    <div class="container">   
+  			<ul class="nav">
+  	  			<li class="active">  
+   		 			<a class="brand" href="#">HrApp.com</a>  
+  				</li>
+  				<li>
+  					<% if current_user %>  
+      				 	<p style="margin: 9px 0 0 5px;">Welcome, <%= current_user.username %>  </p>
+       					        
+    				<% else %>         		
+  	   				<p class="navbar-text">Welcome, Guest</p>
+    				<% end %> 
+  				</li> 
+  			</ul>
+			<ul class="nav pull-right">
+  				<li><%= link_to "Home", index_path %></li>  
+  				<li class="divider-vertical"></li>
+  				<li>
+  					<% if current_user %>  
+      				 	
+       					<%= link_to "Log out", log_out_path %>          
+    				<% else %>         		
+  	   					<%= link_to "LogIn", log_in_path %>
+    				<% end %> 
+  				</li>  
+  				<li class="divider-vertical"></li>
+  				<li><a href="#">Contact</a></li> 
+  				<li class="divider-vertical"></li>
+  				<li><a href="#">About</a></li> 
+		 	</ul>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,12 @@
+.transparent { opacity: .0 }
+.ie .transparent { FILTER: alpha(opacity=0) }
+#trends { MARGIN: 0px auto; WIDTH: 880px; }
+#trends { POSITION: relative; ZOOM: 1; _z-index: 880 }
+#trends .inner { POSITION: relative; WIDTH: 880px; ZOOM: 1; OVERFLOW: hidden }
+#trends UL { Z-INDEX: 20; POSITION: relative; PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; ZOOM: 1; WHITE-SPACE: nowrap; LIST-STYLE-IMAGE: none; PADDING-TOP: 0px }
+#trends LI { PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; ZOOM: 1; DISPLAY: inline; PADDING-TOP: 0px }
+#trends EM { ZOOM: 1; DISPLAY: none }
+#trends LI.trend-label { PADDING-BOTTOM: 8px; PADDING-LEFT: 4px; PADDING-RIGHT: 4px; PADDING-TOP: 8px }
+#trends LI.trend-label { TEXT-TRANSFORM: uppercase; LETTER-SPACING: 0.2em; ZOOM: 1; COLOR: #def; FONT-SIZE: 9px }
+#trends .fade { Z-INDEX: 30; POSITION: absolute; PADDING-BOTTOM: 8px; PADDING-LEFT: 0px; WIDTH: 60px; PADDING-RIGHT: 0px; ZOOM: 1; DISPLAY: block; BACKGROUND: url(../images/fronts/fade-trends2.png) repeat-y 0px 0px; PADDING-TOP: 8px; TOP: 0px; LEFT: 0px; _visibility: hidden; pointer-events: none }
+#trends .fade-right { BACKGROUND-POSITION: -60px 0px; RIGHT: 240px; LEFT: auto }

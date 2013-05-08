@@ -1,0 +1,28 @@
+	<!--Display page title-->
+		<% content_for :title do %> 
+			<title>HrApp.com | Home</title>
+		<% end %> 
+		
+		<div class="row">			
+			<div class="span5">
+				<div class="thumbnail"><h2 style="font-weight: lighter; margin: 0 0 0 5px;">My Dashboard</h2></div>
+				<br />
+				<div class="hero-unit" style="margin: 0 0 10px 0; padding: 10px 0 10px 15px;">
+					<p>Welcome, <%= current_user.name %> </p>				
+					<p style="font-weight: lighter;">	
+						Status: Admin<br />
+						Email: <%= current_user.email %><br />
+						Username: <%= current_user.username %><br />
+						Company Name: <%= current_user.name %><br />
+						Company type: <%= current_user.companytype %><br />
+						Company Registration Id: <%= current_user.registrationid %><br />
+						Company Address: <%= current_user.address %>					
+					</p>
+				</div>
+			</div>
+			<div class="span6">
+				
+			</div>
+		</div>
+		
+		

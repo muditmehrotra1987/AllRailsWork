@@ -1,0 +1,22 @@
+<div class="hero-unit">
+	<%= form_for(@invit) do |f| %>
+  
+  		<% if @invit.errors.any? %>   <!--use to display error message-->
+    		<div class="alert alert-error">     					
+  	  			<h4 class="alert-heading">oops! something went wrong</h4>       	
+      			<ul>
+      				<% @invit.errors.full_messages.each do |msg| %>
+        				<li><%= msg %></li>
+      				<% end %>
+      			</ul>
+    		</div>
+  		<% end %>
+
+    	<%= f.label :recipient_email, "Your Email: " %>
+    	<%= f.text_field :recipient_email %>
+		<div style="margin: 0 0 0 155px;">
+    		<%= f.submit "Submit", :class => "btn btn-primary" %>
+ 		</div>
+	
+	<% end %>
+</div>

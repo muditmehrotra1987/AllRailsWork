@@ -1,0 +1,70 @@
+	<!--Display page title-->
+			<% content_for :title do %> 
+				<title>HrApp.com | Signup!</title>
+			<% end %>  
+			
+	<!--Shows Error Messages-->									
+  				<% if @user.errors.any? %>  
+    				<div class="alert alert-error">     					
+  						<h4 class="alert-heading">Warning!</h4> 
+      					<h3>It's you not us.</h3>  
+      					<ul>  
+        					<% for message in @user.errors.full_messages %>  
+          						<li><%= message %></li>  
+        					<% end %>  
+      					</ul>  
+    				</div>  
+  				<% end %>	
+  					
+	<!--Registration form starts from here-->
+			<div class="row">
+				<div class="span6">
+		
+				<%= form_for @user, :html => {:class => "well horizontal"} do |f| %> 
+					
+						<h1>create a new account</h1>
+ 						<p>We value your privacy. The contact info you enter here will 
+ 						   never be used in a spam like way.</p>
+  
+  						<%= f.hidden_field :invit_token %>  						
+  						<span class="label label-info">Details for LogIn*</span><br />
+	  						<%= f.text_field :username, :placeholder => "Admin Username*" %>							
+	  						<%= f.password_field :password, :placeholder => "Password*" %>							
+	  						<%= f.password_field :password_confirmation, :placeholder => "Password Confirmation*" %>
+  						<br />
+  						<span class="label label-info">Personal Details*</span><br />
+	  						<%= f.text_field :email, :readonly => "readonly" %>
+	  						<%= f.text_field :name, :placeholder => "Company Name*" %>
+							<%= f.text_field :address, :placeholder => "Company Address*" %>
+							<%= f.text_field :registrationid, :placeholder => "Company Registration Id*" %>
+							<%= f.text_field :companytype, :placeholder => "Company Type*" %>
+							<%= f.text_field :phonenumber, :placeholder => "Company Phonenumber*" %>
+						<br />
+  						<p><%= f.submit "Create My Account", :class => "btn btn-primary" %></p>
+
+				<% end %>
+
+				</div>
+			
+				<div class="span6"><br /><br /><br />
+					<h3>Why you'll love HrApp.com</h3>
+					<ul>
+						<li>Easy-set up in minutes</li>
+						<li>All your's company data in one place</li>
+						<li>Complete security and privacy</li>
+					</ul><hr />
+					<h3>That's it!?</h3>
+					<p>Yep, this is all the info we need to set you up. Once 
+						you are done activating your account it's good idea to
+						go in and edit your profile with some stuff about 
+						yourself for others.</p>
+					<p>* Your email address is safe with us! We keep it 
+						completely private.</p><hr />
+					<h3>Contact us@</h3>
+					<address>Triffort Technologies Pvt Ltd<br />Anantraj Plaza Civil Lines<br />Allahabad-211001</address>
+					<p><hr />
+						<h3>Call us@ 01-2345-6789</h3>
+					</p>	
+				</div>
+				
+			</div>
